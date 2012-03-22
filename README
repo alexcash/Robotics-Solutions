@@ -1,0 +1,25 @@
+Problem: http://www2.css.edu/mics/RoboMazeMICS_2011.pdf
+
+Solution by: Alex Cash and Brian Anders
+
+Videos and Details as to our specific robot will be posted to alexcash.com
+under 'Coding' soon. This solution took 2nd place at the 2011 MICS competition.
+The winning robot while much faster, only rode outer walls, and therefore could
+not complete nearly as complex puzzles as our robot. This solution can theoretically
+solve any puzzle within the constraints. When calibrated properly the robot solved 
+every problem we created for it.
+
+The source is written entirely in Java with help of the LEJOs library 
+(http://lejos.sourceforge.net/) to be used on a Lego Mindstorms NXJ unit
+(http://en.wikipedia.org/wiki/Lego_Mindstorms). The code was written for
+the Lejos 0.85 beta library, which is now far out of date. As such a copy
+of this library is included with the repo so that you don't have to go find
+it. These .java files will NOT compile with the latest version of Lejos
+
+The MotorTest and SensorTest.java are both seperate programs to be 
+used to help calibrate the robot, and will produce independent .nxj files.
+robitController deals with the movement and logic, maze.java is the model for our
+data collection. and Mach2 makes all of these work in concert.
+
+Instack.java courtesy of university of colorado: cs.colorado.edu. More documentation
+commented within the file.
